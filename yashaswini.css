@@ -1,0 +1,521 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;/* to avoid browser adding default margins across different elements*/
+  padding: 0;/* removes all default padding from all the elements*/
+  box-sizing:border-box;/*(border box)width and height we set for an element includes content area,padding,border all,(content box)width and height oly include content area and padding,border are added separately*/
+
+  text-decoration: none;/*remove any default text decorations applied by browser*/
+  scroll-behavior: smooth;/*if we click any anchor link ,it will scroll smoothly to target location*/
+  background: #F0F8FF;
+}
+
+/* webkit-scrollbar is a pseudo element in css allows to define properties to entire scrollbar,works for browsers with webkit engine*/
+::-webkit-scrollbar {
+    width: 10px;/* defines width of scrollbar*/
+}
+::-webkit-scrollbar-track {
+    background: #9b9f9b;/* styling track of scrollbar(background color)*/
+}
+::-webkit-scrollbar-thumb {
+    background: #6e93f7;/* styling scroll bar draggable element */
+   border-radius:12px;
+    transition: all 0.3s ease;/* all-any change to any animatable property will be animated,0.3s-any change to any properties will take 0.3s to complete ,ease-transition timing function(will start slow ,then middle,then fast)*/
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;/*when we hover thumb*/
+}
+/*navbar styling */
+
+  
+
+ 
+nav{
+ 
+ 
+  position: fixed;/* they stay in the same place when it is scrolled and stays visible and accessible*/
+margin-top:auto;
+  width: 100%;
+  padding: 20px 0;/*within nav bar*/
+
+  z-index: 998;/* controls stacking order of positioned elements and elements with higher z index values appear in front than lower values*/
+
+  transition: all 0.3s ease;/* all-any change to any animatable property will be animated,0.3s-any change to any properties will take 0.3s to complete ,ease-transition timing function(will start slow ,then middle,then fast)*/
+
+  font-family: 'Ubuntu', sans-serif;
+  
+  
+ 
+  
+}
+nav.sticky{
+  background: #4070f4;/*js sticky class adda adagha*/
+  padding: 13px 0;
+  margin:0;
+  background-color:gray;
+}
+nav .navbar{
+  width: 90%;
+  display: flex;/* box inside box  (portfolio ,menu ,logo)*/
+
+  justify-content: space-between;
+  align-items: center;
+  /* center block level elements horizontally along their container*/
+  
+
+
+}
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 35px;/*portfolio*/
+
+  color: #4070f4;
+}
+nav.sticky .navbar .logo a{
+  color: #fff;
+}
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+ 
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+ 
+  
+}
+.navbar .menu a:hover{
+  background-color: #4070f4;
+}
+nav.sticky .menu a{
+  color: #FFF;
+}
+nav.sticky .menu a:hover{
+  color: #0E2431;
+}
+.navbar .media-icons a{
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
+}
+nav.sticky .media-icons a{
+  color: #FFF;
+}
+
+  
+/* home section styling */
+.home{
+  height: 100vh;/* sets to 100% of viewport height single page type*/
+  width: 100%;/* full width*/
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+  width: 90%;
+  height: 100%;/*100% of home's width*/
+  margin: auto;/* center the block level elements along the container*/
+  display: flex;/*enables flexbox container ,flexbox layout for its child elements*/ 
+  flex-direction: column;/*column -vertical,row-horizontal*/
+  justify-content: center;/*flex-start(up) flex-end(down) center(center)*/
+}
+.home .text-one{
+  font-size: 25px;
+  color: #0E2431;
+}
+.home .text-two{
+  color: #0E2431;
+  font-size: 75px;
+  font-weight: 600;/* thickness of font*/
+  margin-left: -3px;/* artha agila nodu*/
+}
+.home .text-three{
+  font-size: 40px;
+  margin: 5px 0;
+  color: #4070f4;
+}
+
+.home .button{
+  margin: 14px 0;
+}
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}*/
+
+/* About Section Styling */
+/*Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+ .about{
+  background: #F0F8FF;
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 80px 0;
+}
+section{
+  padding-top: 40px;
+}
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details .left{
+  width: 55%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about-details .right{
+  width: 55%;
+}
+section  .topic{
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p{
+  text-align: justify;
+  color: #0E2431;
+}
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+ /* My Skills CSS */
+ 
+
+ .skills {
+  background: #F0F8FF;
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 80px 0;
+}
+
+.skills .content {
+  text-align: center; /* Center text inside content */
+  max-width: 1200px; /* Optional: limit the width of content */
+}
+
+.skills .title {
+  font-size: 24px; /* Adjust as needed */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.skills .skills-details {
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%; /* Full width to ensure centering */
+}
+
+.skills-details .text {
+  margin-bottom: 40px; /* Space below the text */
+}
+
+.skills-details .boxes {
+  display: flex;
+  flex-wrap: wrap;/* Allow boxes to wrap to the next line */
+  justify-content: center; /* Center boxes horizontally */
+  gap: 20px; /* Space between boxes */
+  width: 100%; /* Full width */
+}
+
+.skills-details .box {
+  flex: 1 1 calc(25% - 60px); /* Flex item with responsive width *//*flex grow(how much this item will grow relative to other flex items in same container*//*flex shrink(how much item will shrink relative to other items in same container*//*flex-basis-initial size of item*/
+  max-width: calc(25% - 10px); /* Limit width to prevent overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items inside box */
+  background: #fff; /* Optional: add a background color */
+  padding: 20px; /* Optional: add padding */
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add shadow */
+}
+
+.skills-details .box .topic {
+  font-size: 20px;
+  color: #4070f4;
+}
+
+.skills-details .box .per {
+  font-size: 20px;
+  color: #4070f4;
+}
+
+
+/* My Services CSS */
+.services{
+  
+  
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 80px 0;
+}
+.services .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services .title {
+  font-size: 24px; /* Adjust as needed */
+  margin-bottom: 20px; /* Space below the title */
+}
+.services .boxes .box {
+  color:blue;
+  margin: 100px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+  background-color: white;
+  border:2px solid white;
+}
+
+
+
+
+
+
+
+/* Contact Me CSS */
+.contact{
+  background: #F0F8FF;
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.contact .text{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* Footer CSS */
+footer{
+  background: #4070f4;
+  width:100%;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color:blue;
+  
+}
+footer .text span a{
+  font-weight: 500;
+  color: blue;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #4070f4;
+  background: #4070f4;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;/* as max-width decreases ,width percentage increases bcoz content size shd be visible*(tablets/smaller screens)*/
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{/*i-pad*/
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{/* android tablets,i-phone 12 pro max*/
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .navbar{/*large smart phones*/
+    width: 90%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0E2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu{
+    left: 0;
+  }
+  nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: #4070f4;
+  }
+  nav .navbar .media-icons{
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+  }
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact .text{
+    width: 100%;
+}
+}
+
+@media (max-width: 500px){
+  .home .text-two{/* smaller phone or android tablets*/
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #4070f4;
+  }
+}

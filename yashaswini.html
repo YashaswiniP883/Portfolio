@@ -1,0 +1,203 @@
+<!DOCTYPE html><!--it is to inform browser that this document is html-5-->
+<html lang="en" dir="ltr"><!--lang-language for elements content  dir-text direction of elements content-->
+<head><!--container for<meta> metadata(data about data),<link><script><style><title>-->
+  <meta charset="UTF-8" /><!-- defines character set used-->
+  <title>Responsive Portfolio Website HTML CSS</title><!-- defines title of document,shown in page tab-->
+
+  <link rel="stylesheet" href="yashaswini.css" />
+  <!-- href-to link css file  rel-specifies relationship between current document and linked document-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />-->
+  <!--CDN link to the stylesheet for Font Awesome -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- name(specifies name for metadata) content(provides value associated with name attribute)-->
+  <!-- viewport(users visible area of web page) width-device-width(sets width of web page to users screen width size initial scale(1.0)(initial zoom level when browser loads the page))-->
+
+</head>
+
+<body><!-- it encloses all the content displayed in web browser when page is loaded -->
+
+  <!-- (start)Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i
+        class="fas fa-arrow-up"></i></a><!-- anchor tag when clicked moves to content with id=home  i class->for font awesome inbuilt arrow icon inside anchor tag -->
+  </div>
+  <!-- (end)move to up button-->
+
+  <!-- navigation menu -->
+  <nav><!-- define set of navgation links-->
+    <div class="navbar">
+      <div class="logo"><a style="color:black;" href="#">Portfolio.</a></div><!-- #-heads to top of page-->
+      <ul class="menu"><!-- creates unordered list-->
+        <li><a href="#home">Home</a></li>
+        <!-- if u click Home then it will head to element with id home and u can see that in url section-->
+        <li><a href="#about">About</a></li>
+        <!-- if u click About then it will head to element with id about and u can see that in url section-->
+        <li><a href="#skills">Skills</a></li>
+        <!-- if u click skills then it will head to element with id skills and u can see that in url section-->
+        <li><a href="#services">Project</a></li>
+        <!-- if u click service then it will head to element with id services and u can see that in url section-->
+        <li><a href="#contact">Contact</a></li>
+        <!-- if u click contact then it will head to element with id contact and u can see that in url section-->
+
+      </ul>
+      <div class="media-icons">
+        <!-- #-heads to top of page and facebook icon is embedded with the help of font awesome-->
+        <a href="mailto:yashaswini883@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/YashaswiniP883" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="tel:+7022691405"><i class="fas fa-phone"></i></a>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Yashaswini P</div>
+        <div class="text-three">Software Engineer</div>
+
+      </div>
+      <div class="button"><!-- creating a container with button in it-->
+        <button
+          onclick="window.location.href='https://drive.google.com/file/d/1WTwD5M4b9i971uTVnC77bCATC9yy8gbf/view?usp=sharing';"
+          title="View my resume"><!--window.location object in JavaScript that represents the URL of the current page. You can use it to get or set the URL-->
+          <i class="fas fa-briefcase"></i>Hire Me
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section part-->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/about.jpg" alt="" />
+        </div>
+        <div class="right">
+          <div class="topic">Developing Is My Passion</div>
+          <p>
+            Hi, I'm Yashaswini P, a passionate software developer with a strong foundation in MERN stack and Front-end, Data Structures and Algorithms, and Object-Oriented Programming. I have hands-on experience building scalable web applications and responsive websites, with a keen eye for detail and a commitment to writing clean, maintainable code.</p><br></p>
+          </p>
+          <div class="button">
+            <button
+              onclick="window.location.href='https://drive.google.com/file/d/1WTwD5M4b9i971uTVnC77bCATC9yy8gbf/view?usp=sharing';"
+              title="View my resume"><!--window.location object in JavaScript that represents the URL of the current page. You can use it to get or set the URL-->
+              Download CV
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Skill Section Start -->
+
+  <!--flex box kind-->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skills-details">
+        <div class="text">
+          <p>Here are some of the skills and technologies I've mastered:</p>
+        </div>
+        <div class="boxes">
+          <!-- one box-->
+          <div class="box">
+            <div class="topic"></div>
+            <div class="per">HTML</div>
+          </div><!--one box-->
+          <div class="box">
+            <div class="topic"></div>
+            <div class="per">CSS</div>
+          </div>
+          <div class="box">
+            <div class="topic"></div>
+            <div class="per">Javascript</div>
+          </div>
+          <div class="box">
+            <div class="topic"></div>
+            <div class="per">React</div>
+          </div>
+          <div class="box">
+            <div class="topic"></div>
+            <div class="per">MongoDB</div>
+          </div>
+          <div class="box">
+            <div class="topic"></div>
+            <div class="per">NodeJs</div>
+          </div>
+          <div class="box">
+            <div class="topic"></div>
+            <div class="per">ExpressJS</div>
+          </div>
+          <div class="box">
+            <div class="topic"></div>
+            <div class="per">SQL</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- My Services Section Start -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>My Projects</span></div>
+      <div class="boxes">
+        <div class="box">
+      <div  class="topic">E-commerce Website</div>
+      </div>
+        <div class="box">
+       <div class="topic">Portfolio Website</div>
+      </div>
+        <div class="box">
+          <div class="topic">Digital Calculator App</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+       <!-- Contact Information with Icons -->
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:yashaswini883@gmail.com">yashaswini883@gmail.com</a><!-- created a mailto link-->
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+7022691405">7022691405</a><!--clickable link that allows users to dial a phone number-->
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer Section Start -->
+  <footer style="background-color: #4070f4;"><!--defines footer for document,contains information like author,contact,copyright-->
+    <div class="text">
+      <span>Created By <a href="#">Yashaswini P</a></span>
+    </div>
+  </footer>
+
+  
+
+</body>
+
+</html>
